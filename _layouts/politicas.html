@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: sans-serif;
+			color: #333;
+		}
+		*, *:after, *:before {
+			box-sizing: border-box;
+		}
+		header {
+			padding: 20px 0 10px;
+			width: 100%;
+			background-color: #fff;
+			text-align: center;
+		}
+		header img {
+			max-width: 100%;
+		}
+		.row {
+			width: 90%;
+			margin: 0 auto;
+		}
+		footer {
+			margin: 20px 0 0;
+			padding: 10px 0;
+			background-color: #202020;
+			text-align: center;
+			color: #fff;
+		}
+		footer a {
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="{{ site.url }}/"><img src="{{ "/assets/img/logo-site.png" | prepend: site.url }}" alt="Logo da Aprimore Projetos" title="Logo principal da Aprimore Projetos"></a>
+	</header>
+	<div class="politicas row">
+		<h1>{{ page.title }}</h1>
+		{{ content }}
+	</div>
+	<footer>
+		<p>&copy; 2016 - <a href="{{ site.url }}/">Aprimore Projetos LTDA</a> - CNPJ 26.091.149/0001-17</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.form-contact input[type=text],
+.form-contact input[type=email],
+textarea,
+select
+  display inline-block
+  margin rem(7px) 0
+  padding rem(7px)
+  width 100%
+  background-color $white
+  border 4px solid #eee
+  outline none
+  &:focus
+  	background-color #eee
+
+button[disabled]
+  opacity .7
+  	
+.btn
+  position relative
+  display inline-block
+  padding rem(10px)
+  background-color $red
+  color $white
+  font-weight 600
+  font-size rem(13px)
+  outline none
+  border none
+  border-bottom rem(3px) solid rgba(0,0,0,.3)
+  transition $transition
+  cursor pointer
+  &:hover 
+    opacity .7
+  &:focus
+    top rem(3px)
+    
+.btn-contratar
+  font-size rem(22px)
+  font-weight 900
+  transition .5s
+  &:hover
+    opacity .7

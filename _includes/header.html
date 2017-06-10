@@ -1,0 +1,15 @@
+<div class="modal-overlay">
+  <span class="modal-loader"></span>
+</div>
+
+<div class="header-contacts">
+  <p>{{ site.celphonelink }} <span>| {{ site.emaillink }}</span></p>
+</div>
+<header class="site-header">  
+  <a href="{{ site.url }}/" class="site-logo"><img src="{{ "/assets/img/logo-site.png" | prepend: site.baseurl}}" alt="Logo principal da Toni Construtora"></a>  
+  <a class="sidebar-btn-open" href="#"><i class="icon-menu"></i></a>
+  <nav class="site-menu">
+    {% include menu.html %}
+  </nav>
+</header>
+{% include sidebar-menu.html %}

@@ -1,0 +1,41 @@
+--- 
+layout: page 
+title: Fale Conosco
+permalink: /fale-conosco/ 
+description: Ficaremos felizes em atendê-lo. Estamos a disposição para tirar qualquer dúvida.
+---
+<div class="main-contact">
+  <div class="row">
+    <div class="col col-7">
+      <span>Responderemos o mais breve possível. Pode confiar, somos rápidos no teclado!</span>
+      <form action="https://formspree.io/contato@velozsolution.com" method="post" class="form-contact">
+        <label for="iName" class="hidden">Nome:</label>
+        <input type="text" id="iName" name="nName" placeholder="Nome *" required>
+
+        <label for="iPhone" class="hidden">Telefone:</label>
+        <input type="text" id="iPhone" name="nPhone" placeholder="Telefone *" required>
+
+        <label for="iEnd" class="hidden">Endereço:</label>
+        <input type="text" id="iEnd" name="nEnd" placeholder="Endereço *" required>
+
+        <label for="iEmail" class="hidden">E-mail:</label>
+        <input type="text" id="iEmail" name="nEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="E-mail *" title="ex.: seunome@gmail.com" required>
+
+        <label for="iMsg" class="hidden">Mensagem:</label>
+        <textarea id="iMsg" name="nMsg" rows="5" placeholder="Mensagem *" required></textarea>
+        <span class="obs">* Todos os campos são obrigatórios</span>
+
+        <!-- Alerta -->
+        <p class="alert-success">Mensagem enviada com sucesso. Responderemos o mais breve possível</p>
+        <p class="alert-error">Erro ao enviar o e-mail. Por favor atualize a página e tente novamente</p>
+        <!-- End Alerta -->
+        
+        <p><button class="btn btn-send-contact">Enviar</button></p>
+      </form>
+    </div>
+    <div class="col col-5 google-map">
+      <span class="obs">* clique no mapa para habilitar a navegação.</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1836.6558227192832!2d-46.5464101281973!3d-22.975564797344298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec9afe0e7e9a5%3A0xf50889a07fc56ec3!2sPra%C3%A7a+Maastricht+-+Jardim+Sao+Jose%2C+Bragan%C3%A7a+Paulista+-+SP!5e0!3m2!1spt-BR!2sbr!4v1487527009553" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

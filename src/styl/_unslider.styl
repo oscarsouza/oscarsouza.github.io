@@ -1,0 +1,173 @@
+.unslider 
+  overflow hidden
+  margin 0
+  padding 0
+
+.unslider-wrap 
+  position relative
+
+.unslider-wrap.unslider-carousel>li 
+  float left
+
+.unslider-vertical>ul 
+  height 100%
+
+.unslider-vertical li 
+  float none
+  width 100%
+
+.unslider-fade 
+  position relative
+
+.unslider-fade .unslider-wrap li 
+  position absolute
+  left 0
+  top 0
+  right 0
+  z-index 8
+
+.unslider-fade .unslider-wrap li.unslider-active 
+  z-index 10
+
+.unslider li,
+.unslider ol,
+.unslider ul 
+  list-style none
+  margin 0
+  padding 0
+  border none
+
+.unslider-arrow 
+  display none
+  position absolute
+  left 20px
+  top 50%
+  margin-top -16px
+  z-index 2
+  width 32px
+  height 32px
+  cursor pointer
+  background $red no-repeat 50% 50%
+  background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==')
+  border-radius 100%
+  opacity .6
+  font-size 0
+  transition opacity .2s
+  &:hover
+    opacity .9
+  +above(960px)
+    display block
+  
+.unslider-arrow.next 
+  left auto
+  right 20px  
+
+.unslider-arrow.prev
+  transform rotate(-180deg) 
+
+.unslider-nav ol 
+  list-style none
+  text-align center
+
+.unslider-nav ol li 
+  display inline-block
+  width rem(10px)
+  height rem(10px)
+  margin rem(10px) rem(4px)
+  background transparent
+  border-radius 100%
+  overflow hidden
+  text-indent -999em
+  border 1px solid $red
+  cursor pointer
+
+.unslider-nav ol li.unslider-active 
+  background $red
+  cursor default
+  
+//main
+.my-slider-home
+  position relative
+  margin 0
+  width 100%
+  display table
+  height rem(300px)
+  +above(768px)
+    height rem(450px)
+  li
+    background #202020 no-repeat 50% 50%
+    background-size cover
+    height rem(300px)
+    display flex
+    flex-flow row wrap
+    align-items center
+    +above(768px)
+      height rem(450px)
+    &:nth-child(1)
+      text-align center
+      background-image url('../img/my-slider-bg-01.jpg')
+      .welcome
+        color $red
+        font-size rem(16px)
+        font-weight 900
+      h1
+        margin rem(5px) 0 0
+        color $white
+        display block
+        font-size rem(32px)
+        font-family 'Cinzel', serif
+        span
+          margin-top rem(5px)
+          display block
+          font-size rem(18px)
+      +above(768px)
+        .welcome
+          font-size rem(22px)
+        h1
+          font-size rem(52px)
+          span
+            font-size rem(28px)
+    &:nth-child(2)
+      background-image url('../img/my-slider-bg-02.jpg')
+      .s2
+        padding rem(10px)
+        color $white
+        background-color rgba(0,0,0,0.3)
+        +above(768px)
+          padding rem(40px)
+      p
+        font-family 'Cinzel', serif
+        font-size rem(14px)
+        margin 0 0 rem(10px)
+        text-align center
+        &:last-child
+          margin-bottom 0
+        +above(768px)
+          font-size rem(22px)
+          &:last-child
+            font-size rem(28px)
+            
+    &:nth-child(3)
+      background-image url('../img/my-slider-bg-03.jpg')
+      .s3
+        text-align center
+      p
+        color $white
+        font-family 'Cinzel', serif
+        font-size rem(18px)
+        margin 0
+        +above(768px)
+          font-size rem(36px)
+      span
+        width rem(26px)
+        height rem(26px)
+        background transparent
+        background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==')
+        background-repeat no-repeat
+        background-position 50% 50%
+        font-size 0
+        display block
+        margin rem(20px) auto
+        transform rotate(90deg)
+      .btn-home
+        font-size rem(18px)

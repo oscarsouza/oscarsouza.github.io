@@ -1,0 +1,5 @@
+<ul>
+  {% for link in site.links %}
+  <li><a href="{{ site.url }}{{ link.url }}" class="site-menu-link {{ link.title | truncatewords: 1, '' | downcase }}">{{ link.title }}</a></li>
+  {% endfor %}
+</ul>

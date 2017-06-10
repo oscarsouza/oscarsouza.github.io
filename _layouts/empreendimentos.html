@@ -1,0 +1,32 @@
+--- 
+layout: default 
+---
+<div class="empreendimentos-page {{ page.bg }}">
+
+	<div class="container">
+		<h1 class="page-title">Empreendimento: {{ page.title }}</h1>
+	</div>
+
+	<div class="row">
+		<div class="col col-4">
+			<div class="empreendimentos-descricao">
+				<p class="empreendimento-status-page {{ page.status }}"></p>
+				<h2>{{ page.title }}</h2>
+				<p>{{ page.description }}</p>
+				<p class="local"><i class="icon-location"></i> {{ page.local }}</p>
+				<a href="{{ page.mapa }}" class="ver-mapa" target="_blank">clique aqui para ver no mapa</a>
+			</div>
+			<a href="{{ site.url }}/fale-conosco" class="btn empreendimento-duvidas">Clique aqui maiores informações</a>
+		</div>
+		<div class="col col-8">
+			<div class="my-slider my-slider-empreendimentos">
+				<ul>
+				{% for image in page.images %}
+					<li><img src="{{ site.url }}/assets/img/{{ image }}" alt=""></li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>

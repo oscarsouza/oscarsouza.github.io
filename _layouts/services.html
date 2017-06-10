@@ -1,0 +1,43 @@
+--- 
+layout: default 
+---
+<div class="container">
+	<h1 class="page-title">{{ page.title }}</h1>
+</div>
+
+<article itemprop="mainContentOfPage">
+	<div class="row">
+		<div class="col col-8">
+			{{ content }}
+			<div>
+				<p><strong>Click no botão abaixo para contratar esse plano. Nossa equipe de vendas entrará em contato com você o mais breve possível.</strong>.</p>
+				<a href="{{ "/contato" | prepend: site.baseurl }}" class="btn">Solicite um orçamento</a> 
+				<p><em>Para maiores informações envie um e-mail para <a href="mailto:contato@velozsolution.com">contato@velozsolution.com</em></a></p>
+			</div>
+		</div>
+		<div class="col col-4">
+			<div class="banner">
+				<img src="{{ "/assets/img/banner-quem-conserva.jpg" | prepend: site.baseurl }}" alt="Banner - Quem conserva, não conserta!">
+				<span>Quem conserva, não conserta!</span>
+			</div>
+			<div class="metodologias">
+				<h3>Metodologias</h3>
+				<p>Uma breve explicação sobre as metodologias utilizadas pela Veloz Solution em seu ambiente de trabalho.</p>
+				<ul>
+					<li>
+						<p><strong>KAISEN</strong>: É uma palavra japonesa que significa literalmente melhoria: mudar (kai) para melhor (zen). É a prática da melhoria contínua, onde os funcionários de todos os níveis de uma empresa trabalham em conjunto de forma proativa, com  o objetivo de aplicar pequenas mudanças diárias que resultam em grandes melhorias ao longo do tempo.  Kaizen combina os talentos coletivos dentro de uma empresa para criar um poderoso motor para melhorias.</p>
+						<span class="obs-left"><a href="http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/kaizen/" rel="nofollow"><b>Fonte</b>: Kaisen. Dica de leitura disponível em: http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/kaizen/</a> Acesso em: 30 de out. 2016;</span>
+					</li>
+					<li>
+						<p><strong>PDCA</strong>: O processo de melhoria contínua é a metodologia aplicada para a solução dos problemas e se espelha no desenvolvimento do ciclo do PDCA (abreviação do inglês: Plan, Do, Check, Act), ferramenta da qualidade elaborada por Deming, também é conhecido como círculo/roda de Deming. O Kaizen utiliza-se deste sistema como metodologia para a solução dos problemas e para a introdução de melhorias realizadas por indivíduos em grupos, com autonomia para decisões e para implementações, baseadas em consenso.</p>
+						<span class="obs-left"><a href="http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/pdca/" rel="nofollow"><b>Fonte</b>: PDCA. Dica de leitura disponível em: http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/pdca/</a> Acesso em: 30 de out. 2016;</span>
+					</li>
+					<li>
+						<p><strong>5S</strong>: Na prática, a metodologia 5S é mais que uma ferramenta de gestão: é uma filosofia. Sua aplicação no ambiente de trabalho pretende promover disciplina e segurança dos processos, garantindo assim muito mais qualidade e produtividade. O método é baseado na aplicação de 5 princípios, representados pelas palavras japonesas Seiri ou senso de utilização, Seiton ou senso de organização, Seiso ou senso de limpeza, Seiketsu ou senso de normalização e Shitsuke ou senso de disciplina.</p>
+						<span class="obs-left"><a href="http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/kaizen/" rel="nofollow"><b>Fonte</b>: 5S. Dica de leitura disponível em: http://www.ft.unicamp.br/liag/leanit/index.php/ferramentas/kaizen/</a> Acesso em: 30 de out. 2016;</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>

@@ -1,0 +1,113 @@
+.modal-overlay
+	width 100%
+	height 100%
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
+	background-color $white
+	z-index 90000	
+	display flex
+	align-items center
+	justify-content center
+	.modal-loader
+		width rem(50px)
+		height rem(50px)
+		border 5px solid
+		border-radius 100%
+		border-color $red rgba(0,0,0,0.3) rgba(0,0,0,0.3) rgba(0,0,0,0.3)
+		animation roll 0.6s linear infinite
+	&.off
+		display none
+
+.header-contacts
+	display table
+	position fixed
+	top 0
+	right 0
+	left 0
+	width 100%
+	height rem(25px)
+	padding 0 10px 
+	line-height rem(25px)
+	background-color $red
+	transition all 0.1s
+	z-index 1
+	p
+		margin 0
+		padding 0 
+		color $white
+		font-size rem(13px)
+		text-align right
+		span
+			display none
+			+above(768px)	
+				display inline
+	&.on
+		top rem(-25px)
+		transition all 0.1s
+			
+.site-header
+	position fixed
+	top rem(25px)
+	right 0
+	left 0
+	display table
+	width 100%
+	height rem(130px)
+	line-height rem(130px)
+	background-color $white
+	box-shadow 0 2px 4px rgba(0,0,0,0.3)
+	z-index 100
+	transition all 0.1s
+	.site-logo
+		position absolute
+		display block
+		top 0
+		left 0
+		padding 0 rem(10px)
+		width rem(250px)
+		line-height rem(130px)
+		+above(768px)
+			width rem(300px)
+		img
+			vertical-align middle
+	.sidebar-btn-open
+		right 0
+	.site-menu
+		display none
+		float right
+		li
+			float left
+			.site-menu-link
+				padding 0 rem(15px)
+	+above(960px)
+		.sidebar-btn-open
+			display none
+		.site-menu
+			display block
+	&.on
+		top 0
+
+.sidebar-btn-open, .sidebar-btn-close
+	display block
+	position absolute
+	top 0
+	right 0
+	width rem(60px)
+	height rem(100px)
+	line-height rem(100px)
+	text-align center
+	font-size rem(24px)
+	color $red
+	transition $transition
+	&:hover
+		opacity .5
+		
+.site-menu-link
+	display block
+	color $red
+	font-size rem(14px)
+	transition $transition
+	text-transform uppercase

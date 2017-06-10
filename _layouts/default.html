@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="pt-br" itemscope itemtype="http://schema.org/WebPage">
+{% include head.html %}
+
+<body id="{% if page.title %}{{ page.title | truncatewords: 1, '' | downcase }}{% else %}home{% endif %}">
+	<!--[if lt IE 9]>
+		<p class="browser-upgrade">Você está usando um browser <strong>obsoleto</strong>. <a href="http://www.browsehappy.com" target="_blank">Atualize aqui</a> seu navegador.</p>
+	<![endif]-->
+  {% include header.html %}
+  <main>
+  	<section>
+    	{{ content }}
+    </section>
+  </main>
+  {% include footer.html %}
+</body>
+
+</html>

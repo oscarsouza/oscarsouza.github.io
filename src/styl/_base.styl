@@ -1,0 +1,60 @@
+body 
+  font-family 'Open Sans', sans-serif
+  font-size 16px
+  color $black
+  background-color $white
+  padding-top rem(140px)
+  
+*,
+:before,
+:after 
+  box-sizing border-box
+
+.clearfix 
+  *zoom 1
+
+.clearfix:before,
+.clearfix:after 
+  display table
+
+.clearfix:after 
+  clear both
+
+img 
+  max-width 100%
+  border 0
+
+ul 
+  margin 0
+  padding 0
+  list-style none
+
+a 
+  text-decoration none
+  color inherit
+
+a:active,
+a:hover 
+  outline 0
+  
+.hidden
+  display none
+
+.obs, .obs-left
+  display block
+  font-size rem(12px)
+  font-style italic 
+  color #888
+
+.obs
+  text-align right
+
+.obs-left
+  text-align left
+  
+.browser-upgrade 
+  margin 0
+  padding .3em
+  background-color #e32c13
+  color $white
+  text-align center

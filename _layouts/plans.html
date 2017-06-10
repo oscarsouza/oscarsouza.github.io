@@ -1,0 +1,15 @@
+--- 
+layout: default 
+---
+
+<div class="container">
+	<h1 class="page-title-line">{{ page.title }}</h1>
+
+	{{ content }}
+
+	<div>
+		<p><em>Para contratar esse plano, você precisa preencher um formulário pequeno e nós entraremos em contato com você</em>.</p>
+		<a href="{{ "/contato" | prepend: site.baseurl }}" class="btn">Contratar</a> 
+		<p><em>Para maiores informações envie um e-mail para <a href="mailto:contato@velozsolution.com">contato@velozsolution.com</em></a></p>
+	</div>
+</div>

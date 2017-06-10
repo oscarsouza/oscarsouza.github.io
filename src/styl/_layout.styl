@@ -1,0 +1,142 @@
+body#home .home
+body#imóveis .imóveis
+body#sobre .sobre
+body#fale .fale
+	border-bottom 4px solid $red
+	font-weight 900
+
+.page-title
+	font-size rem(22px)
+	font-weight normal
+	margin rem(30px) 0 0
+	+above(768px)
+		font-size rem(32px)
+
+.index-subtitle
+	padding rem(10px)
+	font-size rem(22px)
+	font-weight normal
+
+.empreendimentos
+	margin-bottom rem(30px)
+	h1
+		margin-bottom rem(15px)
+	ul
+		display flex
+		flex-flow row wrap
+		justify-content space-around //flex-start | flex-end | center | space-between | space-around
+	li
+		flex 1 0 rem(200px)
+		margin rem(20px)
+		display inline-block
+		.empreedimento-capa
+			position relative
+			overflow hidden
+			border-top-left-radius 20px
+			border-bottom-right-radius 20px
+			img
+				width 100%
+				display table
+			.empreendimento-status
+				display block
+				position absolute
+				top 0
+				left 0
+				border-top-left-radius 20px
+				border-bottom-right-radius 20px
+				padding rem(10px)
+				font-size rem(13px)
+				color $white
+				z-index 1
+				&.entregue
+					background-image linear-gradient(45deg,#5ac9d7 0%,#3cd9c1 100%)
+					&:after
+						content 'entregue'
+				&.andamento
+					background-image linear-gradient(45deg,#cd1e27 0%,#b91f27 100%)
+					&:after
+						content 'em andamento'
+			.empreendimento-overlay
+				position absolute
+				top 0
+				right 0
+				bottom 0
+				left 0
+				background-color rgba(0,0,0,.4)	
+				border-top-left-radius 20px
+				border-bottom-right-radius 20px
+				transition $transition
+				opacity 0
+				&:after
+					content '+'
+					color #fff
+					text-align center
+					font-size rem(50px)
+					line-height rem(45px)
+					width rem(50px)
+					height rem(50px)
+					position absolute
+					top 50%
+					left 50%
+					margin-top rem(-25px)
+					margin-left rem(-25px)
+					border 2px solid #fff
+					border-radius 100%
+			&:hover
+				.empreendimento-overlay
+					opacity 1
+		[class^='empreendimento-info']
+			display block
+		.empreendimento-info-cidade
+			font-size rem(14px)
+			margin-top rem(5px)
+		.empreendimento-info-nome
+			padding rem(10px) 0
+			font-size rem(20px)
+			font-weight 900
+		.empreendimento-info-metros
+			font-weight 900
+			font-style italic
+			font-size rem(14px)
+
+.msg-index
+	display table
+	width 100%
+	padding rem(10px) 0
+	background-image url('../img/msg-index-bg.jpg')
+	background-size cover
+	background-position top center
+	background-attachment fixed
+	margin-bottom rem(30px)
+	p
+		text-align center
+		font-size rem(18px)
+		font-family 'Cinzel', serif
+		color $white
+		line-height 1.4
+		font-style italic
+		background-color rgba(0,0,0,0.2)
+		padding rem(20px)
+		+above(768px)
+			font-size rem(26px)
+
+.about-page
+	img
+		margin rem(30px) 0 rem(20px)
+		display table
+	p
+		line-height 1.4
+		text-indent rem(30px)			
+	h2
+		font-size rem(20px)
+		font-weight normal
+		+above(768px)
+			font-size rem(26px)
+
+.google-map
+	iframe 
+		margin rem(5px) 0 0
+		width 100%
+		height rem(300px)
+		box-shadow 0 2px 4px rgba(0,0,0,0.3)
+		display block

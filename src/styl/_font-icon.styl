@@ -1,0 +1,86 @@
+@font-face 
+  font-family 'icomoon'
+  src url('../fonts/icomoon.eot?o8vnbj')
+  src url('../fonts/icomoon.eot?o8vnbj#iefix') format('embedded-opentype'),
+       url('../fonts/icomoon.ttf?o8vnbj') format('truetype'),
+       url('../fonts/icomoon.woff?o8vnbj') format('woff'),
+       url('../fonts/icomoon.svg?o8vnbj#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+  
+@font-face
+  font-family: 'icomoon'
+  src:  url('../fonts/icomoon.eot?7dde1b')
+  src:  url('../fonts/icomoon.eot?7dde1b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7dde1b') format('truetype'),
+    url('../fonts/icomoon.woff?7dde1b') format('woff'),
+    url('../fonts/icomoon.svg?7dde1b#icomoon') format('svg')
+  font-weight: normal
+  font-style: normal
+
+[class^="icon-"], [class*=" icon-"] 
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family 'icomoon' !important
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  
+  /* My adaptation */
+  position relative
+  top rem(1px)
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.icon-phone:before
+  content: "\e942"
+.icon-envelop:before
+  content: "\e945"
+.icon-location:before
+  content: "\e947"
+.icon-clock:before
+  content: "\e94e"
+.icon-mobile:before
+  content: "\e958"
+.icon-quotes-left:before
+  content: "\e977"
+.icon-spinner4:before
+  content: "\e97d"
+.icon-zoom-in:before
+  content: "\e987"
+.icon-lock:before
+  content: "\e98f"
+.icon-menu:before
+  content: "\e9bd"
+.icon-star-full:before
+  content: "\e9d9"
+.icon-plus:before
+  content: "\ea0a"
+.icon-minus:before
+  content: "\ea0b"
+.icon-cross:before
+  content: "\ea0f"
+.icon-arrow-up2:before
+  content: "\ea3a"
+.icon-google:before
+  content: "\ea88"
+.icon-facebook:before
+  content: "\ea90"
+.icon-whatsapp:before
+  content: "\ea93"
+
+
+.roll 
+  display: inline-block
+  animation roll 1s infinite linear
+
+@keyframes roll
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(360deg)
+    

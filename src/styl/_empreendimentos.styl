@@ -1,0 +1,38 @@
+.empreendimentos-descricao
+	padding rem(15px)
+	box-shadow 0 2px 4px rgba(0,0,0,0.3)
+	status
+	.empreendimento-status-page
+		display block
+		padding rem(5px)
+		background-color #ccc
+		color $white
+		font-size rem(13px)
+		text-align center
+		&.entregue:before
+			content 'empreendimento entregue'
+		&.andamento:before
+			content 'empreendimento em andamento'
+	h2
+		margin-top 0
+		font-size rem(18px)
+	p
+		margin 0 0 rem(15px)
+		line-height 1.4
+		&:last-child
+			margin 0			
+	.local 
+		font-size rem(14px)
+		color #ccc
+	.ver-mapa
+		text-align center
+		display block
+		font-size rem(14px)
+		&:hover
+			text-decoration underline
+
+.empreendimento-duvidas	
+	display block
+	margin-top rem(30px)	
+	width 100%
+	text-align center

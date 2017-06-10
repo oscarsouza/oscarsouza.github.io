@@ -1,0 +1,31 @@
+title: Aprimore Projetos 
+description: 
+baseurl: ""  
+url: "https://aprimoreprojetos.com.br" 
+
+facebook_user: https://www.facebook.com/
+google_user: https://plus.google.com/
+
+markdown: kramdown
+
+links:
+  - title: Home
+    url: /
+  - title: Imóveis
+    url: /imoveis
+  - title: Sobre
+    url: /sobre
+  - title: Fale Conosco
+    url: /fale-conosco
+
+emaillink: <a href="mailto:contato@aprimoreprojetos.com.br">contato@aprimoreprojetos.com.br</a>
+celphonelink: <a href="tel:+11995802999">(11) 9 9580-2999</a>
+end: Praça Maastricht, 100 - Euroville Office Premium - Torre Business - 5º andar - sala 514 - Bragança Paulista / SP
+
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js']
+
+# html minify
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  profile: false

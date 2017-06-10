@@ -1,0 +1,28 @@
+.sidebar
+	position fixed
+	top 0
+	left rem(-270px)
+	bottom 0
+	width rem(250px)
+	height 100%
+	padding rem(40px) 0 0
+	background-color $red
+	background-image url('../img/sidebar-bg.png') 
+	background-position 0 100%
+	background-repeat no-repeat
+	text-align center
+	box-shadow 3px 0 15px rgba(0,0,0,0.5)
+	transition $transition
+	z-index 10000
+	+above(rem(960px))
+		display none
+	@media(max-height 420px)
+		padding rem(20px) 0 0
+	.site-menu-link
+		padding rem(20px) 0
+		width 100%		
+		color $white
+		@media(max-height 420px)
+			padding rem(10px) 0
+	&.slide-sidebar
+		transform translate3d(rem(270px), 0, 0)

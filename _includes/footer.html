@@ -1,0 +1,77 @@
+<div class="contact-icons">
+  <ul>
+    <li>
+      <span>Ligue agora</span>
+      <i class="icon-phone"></i> {{ site.celphonelink }}
+    </li>
+    <li>
+      <span>Envie um e-mail</span>
+      <i class="icon-envelop"></i> {{ site.emaillink }}
+    </li>
+  </ul>  
+</div>
+<footer class="footer">
+  
+  <div class="footer-container">
+    <div class="row">
+      <div class="col col-3">
+        <h4>Aprimore Projetos</h4>
+        <ul>
+          <li><a href="{{ site.url }}/">Página Inicial</a></li>
+          <li><a href="{{ site.url }}/imoveis">Imóveis</a></li>
+          <li><a href="{{ site.url }}/sobre">Sobre a Aprimore Projetos</a></li>
+        </ul>
+      </div>
+
+      <div class="col col-3">
+        <h4>Comunicação</h4>
+        <ul>
+          <li><a href="{{ site.url }}/fale-conosco">Fale Conosco</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>  
+      </div>
+
+      <div class="col col-3">
+        <h4>Responsabilidades</h4>
+        <p>Tecnologia e sustentabilidade são aliadas na construção de nossos imóveis, fazendo dos nossos processos produtivos referências de modernidade e preservação do planeta.</p>
+      </div>
+
+      <div class="col col-3 footer-social">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li>
+            <a href="{{ site.facebook_user }}" class="facebook" target="_blank" rel="nofollow"><span class="icon-facebook"></span></a>
+          </li>
+          <li>
+            <a href="{{ site.google_user }}" class="google" target="_blank" rel="nofollow"><span class="icon-google"></span></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    <a href="{{ site.url }}/" class="footer-logo-white"><img src="{{ "/assets/img/footer-logo-white.png" | prepend: site.baseurl}}" alt="Logo branca da Aprimore Projetos"></a>
+
+    <p>
+      &copy; 2016 Aprimore Projetos LTDA<br>CNPJ 26.091.149/0001-17<br><br><a href="{{ "/termos-de-uso" | prepend: site.baseurl }}" target="_blank"> Termos de uso</a> | <a href="{{ "/politica-de-privacidade" | prepend: site.baseurl }}" target="_blank">Política de privacidade</a>
+    </p>
+  </div>
+
+</footer>
+<script>
+    var modal = document.querySelector('.modal-overlay');
+    window.addEventListener('load', function(){
+      modal.classList.add('off');
+    });
+</script>
+<script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>
+<script>
+  jQuery(document).ready(function($) {
+    $('.my-slider').unslider({
+      autoplay: true,
+      delay: 7000
+    });
+  });
+</script>

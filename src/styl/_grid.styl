@@ -1,0 +1,47 @@
+.container
+  width 100%
+  margin 0 auto
+  padding 0 rem(20px)
+  +above($container)
+    max-width $container
+    padding 0
+    
+.row
+  width 100%
+  margin 0 auto
+  padding rem(40px) rem(20px)
+  +above($container)
+    max-width $container
+    padding rem(40px) 0
+
+.row:before,
+.row:after 
+  content " "
+  display table
+
+.row:after 
+  clear both
+
+.col 
+  margin-bottom rem(40px)
+  &:last-child 
+    margin-bottom 0
+
++above(rem(768px)) 
+  .col 
+    position relative
+    margin-bottom 0
+    float left
+    display block
+  .col + .col 
+    margin-left $margin-cols 
+  .col-1 
+    width $width-cols
+  
+  for row in (2..11)
+    .col-{row} 
+      width ($width-cols * row) + ($margin-cols * (row - 1))
+    
+  .col-12 
+    width 100%
+    margin-left 0

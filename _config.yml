@@ -3,7 +3,7 @@ description:
 baseurl: ""  
 url: "https://aprimoreprojetos.com.br" 
 
-facebook_user: https://www.facebook.com/
+facebook_user: https://www.facebook.com/aprimoreprojetos.com.br
 google_user: https://plus.google.com/
 
 markdown: kramdown
